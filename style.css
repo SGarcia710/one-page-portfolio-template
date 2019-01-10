@@ -1,0 +1,363 @@
+/* Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores */
+
+/*Reglas
+header selector{ declaracion 
+  background propiedad: white; valor
+  color: red; 
+} */ 
+
+/* Selector de etiqueta: header - section - body - nav */
+/* Selector descendente: 
+body header div nav ol li a */
+/* Selector de clase con ., las clases se pueden repartir entre diferentes elementos del HTML */
+/* .link */
+/* Selector de id con #, los id son unicos, no se pueden repetir en varios elementos. */
+/* #portfolio */
+
+/* gris oscuro: #1d252c
+grisc claro: #626262
+gris claro claro: #fafafa
+background gris: #1b2127 
+celeste: #026fff*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  background: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', 'Times New Roman';
+  font-weight: bold;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1.5em;
+  color: white;
+  letter-spacing: -.2px;
+  margin: 0;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+.aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 330px;
+  background-color: #1d252c;
+  /* background-image: url('./images/sebastian.png'); */
+  /* background-size: 275px 330px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+}
+
+.aboutme-image {
+  /* object-fit: cover; */
+}
+
+
+/* .portfolio, .event-list, .event-header, .experience, .contact {
+  background: #fafafa;
+} */
+
+.portfolio {
+  /* padding: 20px; */
+  
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #026fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  /* margin-bottom: 40px */
+}
+
+.project {
+  display: flex;
+  background: white;
+  /* box-shadow: 0px 0px 3px 0px gray; */
+  box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 330px;
+}
+
+.project-tittle {
+  text-shadow: 1px 1px gray;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-languages, .project-date, .project-link {
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 18px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', 'Times New Roman';
+}
+
+/* .project-date {
+  margin: 10px 0;
+} */
+
+.project-content {
+  width: 500px;
+}
+
+.project-imageWrapper {
+  height: 300px;
+  width: 450px;
+  /* box-shadow: 2px 2px 5px 0px black; */
+}
+
+.project-imageWrapper img {
+  width: inherit;
+  height: inherit;
+}
+
+.header { 
+  background-color: #1d252c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* height: 100px; */
+  /* margin-bottom: 30px; */
+  box-shadow: 0px 5px 10 5 black;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ol { 
+  display: flex;
+  flex-direction: row;
+}
+
+figure { 
+  margin: 0;
+  /* padding: 0; */
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+  /* display: flex; */
+}
+
+.flexbox {
+  display: flex;
+  /* flex-wrap: nowrap; por defecto, no hay caida, asi que todos se muestran 
+  en la misma fila*/
+  flex-wrap: wrap; /* hay caida, los elementos que no entren en la fila,
+  saltan a la siguiente linea */
+  justify-content: center; /*alineacion a la izquierda */
+  /* justify-content: flex-end; alineacion a la derecha */
+  /* justify-content: center; alineacion centrada */
+  /* espaciado entre elementos para Justify-content: 
+  space-around: Genera espaciado igual a la izquierda y a la derecha de los 
+  elementos hijos, de manera que entre elementos se suma ese espaciado.
+  space-between: Me dara espaciado entre elementos excepto el primero y el ultimo.
+  space-evenly: espaciado igual para todos los lados.
+  */
+  height: 200px;
+  flex-direction: row;
+  align-items: center; /* alineacion vertical de arriba hacia abajo. */
+  /*align-items: flex-end;  alineacion vertical de abajo hacia abajo. */
+}
+
+.box { 
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border: 1px solid black;
+  /* align-self: flex-start; */
+  flex-shrink: 0; /* va de 0 a 1 si se puede encoger o no */
+}
+
+.footer {
+  background-color: #1d252c;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer a {
+  color: white;
+  /* text-decoration: none; */
+  /* padding: 0px 10px; */
+  /* display: flex; */
+}
+
+.event-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event img {
+  width: 480px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event {
+  /* margin: 0px 20px 20px 0; */
+  margin-bottom: 20px;
+  /* box-shadow: 0px 0px 3px 0px gray; */
+  box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+  width: 480px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  /* flex-wrap: nowrap; */
+  overflow: hidden; /* por default esta en initial esconde lo que se desborda del elemento padre/contendor*/
+  /* border: 1px solid black; */
+  background: #f4fbff;
+}
+
+.event-content {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative; /*con esto superpongo elementos encima de otros */
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-link { 
+  color: #026fff;
+  border: 1px solid; /* el color del borde hereda el color dl texto */
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.event-header{
+  margin-left: 0px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+
+}
+
+.social-link {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  margin: 0px 20px;
+}
+
+.social-link.twitter {
+  background-image: url('./images/twitter-icon.png');
+}
+
+.social-link.instagram {
+  background-image: url('./images/instagram-icon.png');
+}
+
+.social-link.github {
+  background-image: url('./images/github-icon.png');
+}
+
+.social-link.steam {
+  background-image: url('./images/steam-icon.png');
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-email input{
+  border-color: gray;
+  padding: 10px 40px; /* como es un input, el padding influye en el placeholder y tambien en donde empezara a introducirse el texto */
+  background-image: url('./images/email-icon.png');
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position-y: center;
+  background-position-x: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  border-style: solid;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.wrapper {
+  border: 1px solid red;
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  box-shadow: inherit;
+}
+
+.blue-line {
+
+
+}
