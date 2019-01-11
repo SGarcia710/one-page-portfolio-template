@@ -69,19 +69,18 @@ h1 strong {
   /* background-position-x: right; */
 }
 
-.aboutme-image {
-  /* object-fit: cover; */
-}
+/* .aboutme-image {
+  object-fit: cover;
+} */
 
 
 /* .portfolio, .event-list, .event-header, .experience, .contact {
   background: #fafafa;
 } */
 
-.portfolio {
-  /* padding: 20px; */
-  
-}
+/* .portfolio {
+  padding: 20px;
+} */
 
 h2 {
   text-transform: uppercase;
@@ -176,38 +175,50 @@ figure {
   color: white;
   text-decoration: none;
   padding: 0px 10px;
+  font-size: 20px; 
   /* display: flex; */
 }
 
-.flexbox {
+.menu {
   display: flex;
-  /* flex-wrap: nowrap; por defecto, no hay caida, asi que todos se muestran 
-  en la misma fila*/
-  flex-wrap: wrap; /* hay caida, los elementos que no entren en la fila,
-  saltan a la siguiente linea */
-  justify-content: center; /*alineacion a la izquierda */
-  /* justify-content: flex-end; alineacion a la derecha */
-  /* justify-content: center; alineacion centrada */
-  /* espaciado entre elementos para Justify-content: 
+  align-items: center;
+}
+
+.contact-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  /* padding: 10px 10px; */
+  /* font-size: 18 */
+}
+
+/* .flexbox {
+  display: flex;
+  flex-wrap: nowrap; por defecto, no hay caida, asi que todos se muestran 
+  en la misma fila
+   flex-wrap: wrap; hay caida, los elementos que no entren en la fila,
+  saltan a la siguiente linea 
+  justify-content: center; alineacion a la izquierda
+  justify-content: flex-end; alineacion a la derecha 
+  justify-content: center; alineacion centrada
+  espaciado entre elementos para Justify-content: 
   space-around: Genera espaciado igual a la izquierda y a la derecha de los 
   elementos hijos, de manera que entre elementos se suma ese espaciado.
   space-between: Me dara espaciado entre elementos excepto el primero y el ultimo.
   space-evenly: espaciado igual para todos los lados.
-  */
   height: 200px;
   flex-direction: row;
-  align-items: center; /* alineacion vertical de arriba hacia abajo. */
-  /*align-items: flex-end;  alineacion vertical de abajo hacia abajo. */
-}
+  align-items: center; alineacion vertical de arriba hacia abajo.
+  align-items: flex-end;  alineacion vertical de abajo hacia abajo.
+} */
 
-.box { 
+/* .box { 
   width: 50px;
   height: 50px;
   margin: 20px;
   border: 1px solid black;
-  /* align-self: flex-start; */
-  flex-shrink: 0; /* va de 0 a 1 si se puede encoger o no */
-}
+  align-self: flex-start;
+  flex-shrink: 0; va de 0 a 1 si se puede encoger o no
+} */
 
 .footer {
   background-color: #1d252c;
@@ -225,7 +236,6 @@ figure {
 }
 
 .event-list {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -271,6 +281,7 @@ figure {
   padding: 5px 20px;
   border-radius: 5px;
 }
+
 .event-header{
   margin-left: 0px;
 }
@@ -282,10 +293,6 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.social {
-
 }
 
 .social-link {
