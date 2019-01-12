@@ -103,7 +103,7 @@ h2 {
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  height: 330px;
+  /* height: 330px; */
   flex-wrap: wrap;
 }
 
@@ -131,18 +131,16 @@ h2 {
 } */
 
 .project-content {
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageWrapper {
-  height: 300px;
-  width: 450px;
+  width: 50%;
   /* box-shadow: 2px 2px 5px 0px black; */
 }
 
 .project-imageWrapper img {
-  width: inherit;
-  height: inherit;
+  max-width: 100%;
 }
 
 .header { 
@@ -154,7 +152,7 @@ h2 {
   flex-wrap: wrap; /* activo la caida cuando el espacio no es suficiente horizontalmente */ 
   /* height: 100px; */
   /* margin-bottom: 30px; */
-  box-shadow: 0px 5px 10 5 black;
+  /* box-shadow: 0px 5px 10 5 black; */
 }
 
 ol,
@@ -360,11 +358,14 @@ figure {
   /* border: 1px solid red; */
   /* width: 1000px; */
   max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-content: inherit;
   justify-items: inherit;
+  text-align: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
@@ -381,12 +382,60 @@ Opinion, siento que es un poco desordenado. */
 
 }
 
-@media screen and (max-width: 768px) { 
-  
+@media screen and (max-width: 767px) { 
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: block; /*initial es el valor por defecto */
+  }
+  .header ol li {
+    height: 50px;
+    text-align: center;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .header .logo{
+   text-align: center; 
+  }
+  .project{
+    display: block; 
+  }
+  .project-imageWrapper{
+    width: auto;
+    text-align: center;
+  }
+  .project-content{
+    width: auto;
+    /* font-size: 16px; */
+  }
+  .project-languages, .project-date, .project-link { 
+    margin: .4em 0;
+  }
+  .project-tittle{
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  .project-link{
+    font-size: 1em;
+  }
+  .project-languages{
+    font-size: .7em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: .8em;
+  }
 }
 
 @media screen and (max-width: 480px) { 
-  
+  .project-content{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 320px) { 
