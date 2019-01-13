@@ -562,7 +562,6 @@ Opinion, siento que es un poco desordenado. */
   .event img {
     width: 100%;
   }
-
 }
 /* 671 */
 /* 647 */
@@ -591,7 +590,6 @@ Opinion, siento que es un poco desordenado. */
   .form-email h3{
     margin-top: 0;
   }
-
   .footer{
     display: block;
     text-align: center;
@@ -602,6 +600,7 @@ Opinion, siento que es un poco desordenado. */
     font-size: 1.5em;
   }
 }
+
 @media screen and (max-width: 401px) { 
   .social-link {
     display: inline-block;
@@ -610,7 +609,7 @@ Opinion, siento que es un poco desordenado. */
     background-size: 55px 55px;
     background-repeat: no-repeat;
     margin: 0px 5px;
-}
+  }
 }
 
 @media screen and (max-width: 320px) { 
