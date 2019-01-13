@@ -64,6 +64,7 @@ h1 strong {
   height: 330px;
   background-color: #1d252c;
   flex-wrap: wrap;
+  /* margin: 10px */
   /* background-image: url('./images/sebastian.png'); */
   /* background-size: 275px 330px; */
   /* background-repeat: no-repeat; */
@@ -80,7 +81,7 @@ h1 strong {
 } */
 
 /* .portfolio {
-  padding: 20px;
+  margin: 10px;
 } */
 
 h2 {
@@ -241,6 +242,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .event img {
@@ -251,10 +253,11 @@ figure {
 
 .event {
   /* margin: 0px 20px 20px 0; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* box-shadow: 0px 0px 3px 0px gray; */
   box-shadow:0px 2px 4px rgba(0,0,0,0.2);
-  width: 480px;
+  width: 48%;
+  margin: 1%;
   border-radius: 10px;
   flex-shrink: 0;
   /* flex-wrap: nowrap; */
@@ -300,11 +303,11 @@ figure {
 
 .social-link {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-size: 100px 100px;
+  width: 70px;
+  height: 70px;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .social-link.twitter {
@@ -378,8 +381,11 @@ Opinion, siento que es un poco desordenado. */
 
 /* Si hare desktop-first, se empieza desde el media query mas grande. */
 
-@media screen and (max-width: 1024px) {
 
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 1em;
+  }
 }
 
 @media screen and (max-width: 767px) { 
@@ -430,11 +436,47 @@ Opinion, siento que es un poco desordenado. */
   .project-description{
     font-size: .8em;
   }
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
+
 }
+
+@media screen and (max-width: 647px) { 
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email button{
+    font-size: 18px;
+    margin: 1em auto;
+  }
+}
+
 
 @media screen and (max-width: 480px) { 
   .project-content{
     font-size: 12px;
+  }
+  .event-content{
+    margin: -2em .8em .8em;
+    padding: 1em;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+    /* padding: 1px; */
   }
 }
 
