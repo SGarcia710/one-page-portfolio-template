@@ -454,7 +454,9 @@ Opinion, siento que es un poco desordenado. */
     /* justify-content: center; */
     /* text-align: center; */
   }
-
+  .portfolio{
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 895px) { 
@@ -530,7 +532,7 @@ Opinion, siento que es un poco desordenado. */
   }
   .project-content{
     width: auto;
-    /* font-size: 16px; */
+    /* font-size: 2em; */
   }
   .project-languages, .project-date, .project-link { 
     margin: .4em 0;
@@ -549,7 +551,10 @@ Opinion, siento que es un poco desordenado. */
     font-size: 1em;
   }
   .project-description{
-    font-size: .8em;
+    font-size: 1em;
+  }
+  .event-description{
+    font-size: 1em;
   }
   .event {
     width: auto;
@@ -575,9 +580,9 @@ Opinion, siento que es un poco desordenado. */
 }
 
 @media screen and (max-width: 480px) { 
-  .project-content{
+  /* .project-content{
     font-size: 12px;
-  }
+  } */
   .event-content{
     margin: -2em .8em .8em;
     padding: 1em;
