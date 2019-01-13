@@ -406,12 +406,13 @@ figure {
 }
 
 .burger-button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: rgba(250, 250, 250, .8);
   display: none;
-  line-height: 40px;
+  line-height: 50px; /*largo de linea, o interlineado, para centrar verticalmente 
+  se puede usar solamente dandole el mismo tamaño de lo que quieres centrar */
   text-align: center;
   position: fixed;
   z-index: 4;
@@ -419,7 +420,7 @@ figure {
   top: 5px;
   color: #1d252c;
   box-shadow:0px 2px 4px rgba(0,0,0,0.2);
-  font-size: 21px;
+  font-size: 35px;
 }
 
 /* segunda forma de insertar un media query
@@ -456,8 +457,6 @@ Opinion, siento que es un poco desordenado. */
 
 }
 
-
-
 @media screen and (max-width: 895px) { 
   .aboutme{
     height: 330px;
@@ -481,9 +480,8 @@ Opinion, siento que es un poco desordenado. */
  
 @media screen and (max-width: 767px) { 
   .burger-button{
-    display: block;
+    display: block; /*aqui activo el menu hamburguesa*/
   }
-
   .menu{
     position: fixed;
     z-index: 3;
@@ -497,12 +495,10 @@ Opinion, siento que es un poco desordenado. */
     align-items: center;
     justify-content: center;
     transition: .3s;
-
   }
-  .menu.is-active{
+  .menu.is-active{ /*Aqui lo muevo hacia el viewport */
     left: 0;
   }
-
   .header{
     display: block;
     height: auto;
