@@ -430,7 +430,7 @@ Opinion, siento que es un poco desordenado. */
 /* Si hare desktop-first, se empieza desde el media query mas grande. */
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .wrapper {
     padding: 0 1em;
   }
@@ -481,6 +481,10 @@ Opinion, siento que es un poco desordenado. */
 }
  
 @media screen and (max-width: 767px) { 
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .burger-button{
     display: block; /*aqui activo el menu hamburguesa*/
   }
@@ -606,7 +610,9 @@ Opinion, siento que es un poco desordenado. */
     display: inline-block;
     width: 55px;
     height: 55px;
-    background-size: 55px 55px;
+    /* background-size: 55px 55px; */
+    /* background-size: 55px; */
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px 5px;
   }
