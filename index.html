@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="wrapper">
         <figure class="logo"><img src="./images/logosgv1.png" width="80" height="80" alt="Logo Sebastian Garcia"></figure>
@@ -35,12 +36,12 @@
         </nav>
       </div>
     </header>
-    <!-- <section id="aboutme" class="aboutme">
+    <section id="aboutme" class="aboutme">
       <div class="wrapper">
         <h1>Hey, bienvenido! soy <strong>Sebastián García</strong>, <br> desarrollador y diseñador <strong>web</strong>.</h1>
         <img class="aboutme-image" width="275" height="330" src="./images/sebastian.png" alt="Sebastián">
       </div>
-    </section> -->
+    </section>
     <section id="portfolio" class="portfolio">
       <div class="wrapper">
         <h2>Proyectos destacados</h2>
@@ -129,5 +130,17 @@
         <div><p>Made with ❤️ by <a href="">Sebastian Garcia</a>.</p></div>
       </div>
     </footer>
+    <script>
+    const menu = document.querySelector('.menu');
+    const burgerButton = document.querySelector('#burger-menu');
+    burgerButton.addEventListener('click', hideShow);
+    function hideShow(){
+      if (menu.classList.contains('is-active')){
+      menu.classList.remove('is-active');
+      }else{
+      menu.classList.add('is-active');
+      }
+    }
+    </script>
   </body>
 </html>
