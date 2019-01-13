@@ -564,8 +564,9 @@ Opinion, siento que es un poco desordenado. */
   }
 
 }
-
-@media screen and (max-width: 647px) { 
+/* 671 */
+/* 647 */
+@media screen and (max-width: 673px) { 
   .contact{
     height: auto;
     padding: 1em 0;
@@ -600,6 +601,16 @@ Opinion, siento que es un poco desordenado. */
   h1{
     font-size: 1.5em;
   }
+}
+@media screen and (max-width: 401px) { 
+  .social-link {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    margin: 0px 5px;
+}
 }
 
 @media screen and (max-width: 320px) { 
